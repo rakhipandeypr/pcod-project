@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Period & PCOD Tracker</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(to right, #ffafbd, #ffc3a0) ;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .login-container {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      width: 380px;
+      padding: 40px 30px;
+      text-align: center;
+    }
+
+    .login-container h2 {
+      color: #ff6f91;
+      margin-bottom: 30px;
+      font-weight: 600;
+    }
+
+    .login-container label {
+      display: block;
+      margin-top: 15px;
+      font-weight: 500;
+      text-align: left;
+      color: #333;
+    }
+
+    .login-container input[type="text"],
+    .login-container input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin-top: 5px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      outline: none;
+      transition: 0.3s;
+    }
+
+    .login-container input[type="text"]:focus,
+    .login-container input[type="password"]:focus {
+      border-color: #ff6f91;
+      box-shadow: 0 0 5px rgba(255,111,145,0.5);
+    }
+
+    .login-container button {
+      margin-top: 25px;
+      width: 100%;
+      padding: 12px;
+      background: #ff6f91;
+      color: white;
+      font-size: 1em;
+      font-weight: 600;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .login-container button:hover {
+      background: #ff4d70;
+    }
+
+    .footer-text {
+      margin-top: 20px;
+      font-size: 0.9em;
+      color: #555;
+    }
+
+    .footer-text a {
+      color: #ff6f91;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .footer-text a:hover {
+      text-decoration: underline;
+    }
+    
+  </style>
+</head>
+<body>
+   <script src:password script.js></script>
+  <div class="login-container">
+    <h2>Welcome Back 🌸</h2>
+    <!-- Form: login pe click karte hi dashboard open hoga -->
+    <form action="dashboard.html" method="get">
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" placeholder="Enter your username" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" required>
+      
+ 
+      <button type="submit">Login</button>
+    </form>
+
+    <div class="footer-text">
+      Don't have an account? <a href="signup.html">Sign Up</a>
+    </div>
+  </div>
+
+</body>
+</html>
